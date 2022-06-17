@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index3.css" />
+    <link rel="stylesheet" href="index4.css" />
+  </head>
+  <body>
+    <body>
+      <noscript
+        ><strong
+          >We're sorry but striki doesn't work properly without JavaScript
+          enabled. Please enable it to continue.</strong
+        ></noscript
+      >
+      <div id="app" data-v-app="">
+        <div>
+          <!---->
+          <div>
+            <div class="navbar-area bg-white p-relative">
+              <div class="strax-nav">
+                <div class="container">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="/home-seven" class="navbar-brand"
+                      ><img
+                        src="data:image/png;base64,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"
+                        alt="logo"
+                    /></a>
+                    <div class="navbar-toggler" aria-pressed="false">
+                      <span class="icon-bar top-bar"></span
+                      ><span class="icon-bar middle-bar"></span
+                      ><span class="icon-bar bottom-bar"></span>
+                    </div>
+                    <div class="collapse navbar-collapse" is-nav="">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">
+                            Home <i class="bx bx-chevron-down"></i
+                          ></a>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <a href="/" class="nav-link" exact="">
+                                Home One (IT Startup)
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/home-two" class="nav-link">
+                                Home Two (IT Startup)
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/home-three" class="nav-link">
+                                Home Three (IT Startup)
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/home-four" class="nav-link">
+                                Home Four (SaaS Startup)
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/home-five" class="nav-link">
+                                Home Five (Chatbot)
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/home-six" class="nav-link">
+                                Home Six (Chatbot)
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/home-seven" class="nav-link">
+                                Home Seven (Chatbot)
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                aria-current="page"
+                                href="/home-eight"
+                                class="router-link-active active nav-link"
+                              >
+                                Home Eight (Digital Marketing)
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a href="/about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="/pricing" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">
+                            Pages <i class="bx bx-chevron-down"></i
+                          ></a>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                Services <i class="bx bx-chevron-down"></i
+                              ></a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                  <a href="/services-one" class="nav-link"
+                                    >Services Style One</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a href="/services-two" class="nav-link"
+                                    >Services Style Two</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a href="/services-three" class="nav-link"
+                                    >Services Style Three</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a href="/single-service" class="nav-link"
+                                    >Service Details</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                Features <i class="bx bx-chevron-down"></i
+                              ></a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                  <a href="/features-one" class="nav-link"
+                                    >Features Style One</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a href="/features-two" class="nav-link"
+                                    >Features Style Two</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/team" class="nav-link">Team</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/log-in" class="nav-link">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/sign-up" class="nav-link">Sign Up</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/faq" class="nav-link">FAQ</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link"
+                            >Blog <i class="bx bx-chevron-down"></i
+                          ></a>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item">
+                              <a href="/blog-one" class="nav-link">Blog Grid</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/blog-two" class="nav-link"
+                                >Blog Right Sidebar</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a href="/single-blog" class="nav-link"
+                                >Blog Details</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a href="/contact" class="nav-link">Contact</a>
+                        </li>
+                      </ul>
+                      <div class="others-options">
+                        <a href="/contact" class="default-btn"
+                          ><i class="bx bxs-hot"></i>Get Started<span></span></a
+                        ><a href="/log-in" class="default-btn black-btn"
+                          ><i class="bx bx-log-in"></i>Log In<span></span
+                        ></a>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="others-option-for-responsive">
+                <div class="container">
+                  <div class="dot-menu">
+                    <div class="inner">
+                      <div class="circle circle-one"></div>
+                      <div class="circle circle-two"></div>
+                      <div class="circle circle-three"></div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="option-inner">
+                      <div class="others-options">
+                        <a href="/contact" class="default-btn"
+                          ><i class="bx bxs-hot"></i>Get Started<span></span></a
+                        ><a href="/log-in" class="optional-btn black-btn"
+                          ><i class="bx bx-log-in"></i>Log In<span></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="digital-agency-banner">
+              <div class="container">
+                <div class="digital-agency-banner-content">
+                  <h1>World Leading <span>Digital Marketing</span> Agency</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor dolore magna aliqua. Quis ipsum
+                    suspendisse ultrices gravida. Risus commodo viverra maecenas
+                    accumsan lacus vel facilisis.
+                  </p>
+                  <a href="/contact" class="default-btn"
+                    ><i class="bx bxs-hot"></i>Get Started Now<span></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="featured-area pt-100 pb-70">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-featured-box">
+                      <img src="/img/featured-img1.57d6096a.jpg" alt="image" />
+                      <h3>Marketing Campaigns &amp; Content Creation</h3>
+                      <a href="#" class="read-more-btn"
+                        >Read More <i class="bx bx-right-arrow-alt"></i></a
+                      ><a href="#" class="link-btn"></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-featured-box">
+                      <img src="/img/featured-img2.33f81cd2.jpg" alt="image" />
+                      <h3>LInk Building &amp; Local Search Strategy</h3>
+                      <a href="#" class="read-more-btn"
+                        >Read More <i class="bx bx-right-arrow-alt"></i></a
+                      ><a href="#" class="link-btn"></a>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3"
+                  >
+                    <div class="single-featured-box">
+                      <img src="/img/featured-img3.d6869623.jpg" alt="image" />
+                      <h3>Search Optimization &amp; Paid Advertising</h3>
+                      <a href="#" class="read-more-btn"
+                        >Read More <i class="bx bx-right-arrow-alt"></i></a
+                      ><a href="#" class="link-btn"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-area">
+              <div class="container">
+                <div class="section-title text-left">
+                  <span class="sub-title">About Us</span>
+                  <h2>We Are A Strategic Digital Marketing Agency</h2>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="about-inner-area">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                      <div class="about-inner-image">
+                        <img src="about-image.21afb113.jpg" alt="image" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <div class="about-inner-content">
+                        <div class="content">
+                          <h2>
+                            We Can Build Strategy That Would Make a Big
+                            Difference
+                          </h2>
+                          <ul class="features-list">
+                            <li>
+                              <i class="bx bx-check"></i> Complete Marketing
+                              Solutions
+                            </li>
+                            <li>
+                              <i class="bx bx-check"></i> Flexible Working Hours
+                            </li>
+                            <li>
+                              <i class="bx bx-check"></i> Experienced Team
+                              Members
+                            </li>
+                            <li>
+                              <i class="bx bx-check"></i> Outstanding Digital
+                              Experience
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-area ptb-100">
+              <div class="container">
+                <div class="section-title text-left">
+                  <span class="sub-title">Services</span>
+                  <h2>Let's Check Our Services</h2>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-services-box">
+                      <div class="row m-0">
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="content">
+                            <h3>
+                              <a href="/single-service" class=""
+                                >Social Media Marketing</a
+                              >
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor.
+                            </p>
+                            <a href="/single-service" class="read-more-btn"
+                              >Read More <i class="bx bx-right-arrow-alt"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="image bg-1">
+                            <img
+                              src="/img/services-img1.95d5f448.jpg"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-services-box">
+                      <div class="row m-0">
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="content">
+                            <h3>
+                              <a href="/single-service" class=""
+                                >SEO Optimization</a
+                              >
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor.
+                            </p>
+                            <a href="/single-service" class="read-more-btn"
+                              >Read More <i class="bx bx-right-arrow-alt"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="image bg-2">
+                            <img
+                              src="/img/services-img2.d385cf76.jpg"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-services-box">
+                      <div class="row m-0">
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="content">
+                            <h3>
+                              <a href="/single-service" class=""
+                                >Advanced Analytics</a
+                              >
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor.
+                            </p>
+                            <a href="/single-service" class="read-more-btn"
+                              >Read More <i class="bx bx-right-arrow-alt"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="image bg-3">
+                            <img
+                              src="/img/services-img3.ee7dee2d.jpg"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-services-box">
+                      <div class="row m-0">
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="content">
+                            <h3>
+                              <a href="/single-service" class=""
+                                >Email Marketing</a
+                              >
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor.
+                            </p>
+                            <a href="/single-service" class="read-more-btn"
+                              >Read More <i class="bx bx-right-arrow-alt"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 p-0">
+                          <div class="image bg-4">
+                            <img
+                              src="/img/services-img4.aa5571a4.jpg"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <div class="services-btn-box">
+                      <a href="/services-three" class="default-btn"
+                        ><i class="bx bx-bullseye"></i>View All<span></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case-studies-area pt-100 pb-70">
+              <div class="container">
+                <div class="section-title text-left">
+                  <span class="sub-title">Case Studies</span>
+                  <h2>Check of our some recent works &amp; case studies</h2>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="case-studies-slides">
+                  <section class="carousel" aria-label="Gallery">
+                    <div class="carousel__viewport">
+                      <ol
+                        class="carousel__track"
+                        style="
+                          transform: translateX(-862.5px);
+                          transition: all 0ms ease 0s;
+                        "
+                      >
+                        <li
+                          class="carousel__slide carousel__slide--prev"
+                          style="width: 50%; order: 2"
+                        >
+                          <div class="single-case-studies-item">
+                            <a href="#" class="image d-block"
+                              ><img
+                                src="/img/case-studies-img1.482c1c01.jpg"
+                                alt="image"
+                            /></a>
+                            <div class="content">
+                              <h3>
+                                <a href="#"
+                                  >Customer Satisfaction for a Digital Marketing
+                                  Agency</a
+                                >
+                              </h3>
+                              <a href="#" class="link-btn"
+                                ><i class="bx bx-right-arrow-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="carousel__slide carousel__slide--active carousel__slide--visible"
+                          style="width: 50%; order: 3"
+                        >
+                          <div class="single-case-studies-item">
+                            <a href="#" class="image d-block"
+                              ><img
+                                src="/img/case-studies-img2.3f85a9c1.jpg"
+                                alt="image"
+                            /></a>
+                            <div class="content">
+                              <h3>
+                                <a href="#"
+                                  >Return on Investment for Various Digital
+                                  Marketing</a
+                                >
+                              </h3>
+                              <a href="#" class="link-btn"
+                                ><i class="bx bx-right-arrow-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="carousel__slide carousel__slide--next"
+                          style="width: 50%; order: 4"
+                        >
+                          <div class="single-case-studies-item">
+                            <a href="#" class="image d-block"
+                              ><img
+                                src="/img/case-studies-img3.3d88f46a.jpg"
+                                alt="image"
+                            /></a>
+                            <div class="content">
+                              <h3>
+                                <a href="#"
+                                  >Google Search Engine Marketing Case Study</a
+                                >
+                              </h3>
+                              <a href="#" class="link-btn"
+                                ><i class="bx bx-right-arrow-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="carousel__slide"
+                          style="width: 50%; order: 0"
+                        >
+                          <div class="single-case-studies-item">
+                            <a href="#" class="image d-block"
+                              ><img
+                                src="/img/case-studies-img4.c7e05de4.jpg"
+                                alt="image"
+                            /></a>
+                            <div class="content">
+                              <h3>
+                                <a href="#"
+                                  >Analysis of New Product Launch Using
+                                  Google</a
+                                >
+                              </h3>
+                              <a href="#" class="link-btn"
+                                ><i class="bx bx-right-arrow-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="carousel__slide"
+                          style="width: 50%; order: 1"
+                        >
+                          <div class="single-case-studies-item">
+                            <a href="#" class="image d-block"
+                              ><img
+                                src="/img/case-studies-img5.964f63b5.jpg"
+                                alt="image"
+                            /></a>
+                            <div class="content">
+                              <h3>
+                                <a href="#"
+                                  >Social Media Strategies for Online Shopping
+                                  Cart</a
+                                >
+                              </h3>
+                              <a href="#" class="link-btn"
+                                ><i class="bx bx-right-arrow-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+                    </div>
+                    <button
+                      type="button"
+                      class="carousel__prev"
+                      aria-label="Navigate to previous slide"
+                    >
+                      <svg
+                        class="carousel__icon"
+                        viewBox="0 0 24 24"
+                        role="img"
+                        ariaLabel="arrowLeft"
+                      >
+                        <title>arrowLeft</title>
+                        <path
+                          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      class="carousel__next"
+                      aria-label="Navigate to next slide"
+                    >
+                      <svg
+                        class="carousel__icon"
+                        viewBox="0 0 24 24"
+                        role="img"
+                        ariaLabel="arrowRight"
+                      >
+                        <title>arrowRight</title>
+                        <path
+                          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-area ptb-100">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="section-title text-left">
+                      <span class="sub-title">Testimonials</span>
+                      <h2>Our Customer Valuable Feedback</h2>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="testimonials-slides-two">
+                      <section class="carousel" aria-label="Gallery">
+                        <div class="carousel__viewport">
+                          <ol
+                            class="carousel__track"
+                            style="
+                              transform: translateX(-540px);
+                              transition: all 0ms ease 0s;
+                            "
+                          >
+                            <li
+                              class="carousel__slide carousel__slide--prev"
+                              style="width: 100%; order: 0"
+                            >
+                              <div class="single-testimonials-box">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Quis ipsum ultrices gravida. Risus commodo
+                                  viverra maecenas accumsan lacus vel facilisis.
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt.
+                                </p>
+                                <div class="client-info">
+                                  <div class="d-flex align-items-center">
+                                    <img
+                                      src="/img/user1.583aae6e.jpg"
+                                      alt="image"
+                                    />
+                                    <div class="title">
+                                      <h3>John Smith</h3>
+                                      <span>CEO at Envato</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="carousel__slide carousel__slide--active carousel__slide--visible"
+                              style="width: 100%; order: 1"
+                            >
+                              <div class="single-testimonials-box">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Quis ipsum ultrices gravida. Risus commodo
+                                  viverra maecenas accumsan lacus vel facilisis.
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt.
+                                </p>
+                                <div class="client-info">
+                                  <div class="d-flex align-items-center">
+                                    <img
+                                      src="/img/user2.181890da.jpg"
+                                      alt="image"
+                                    />
+                                    <div class="title">
+                                      <h3>Olivar Lucy</h3>
+                                      <span>CEO at HiboTheme</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="carousel__slide carousel__slide--next"
+                              style="width: 100%; order: 2"
+                            >
+                              <div class="single-testimonials-box">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Quis ipsum ultrices gravida. Risus commodo
+                                  viverra maecenas accumsan lacus vel facilisis.
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt.
+                                </p>
+                                <div class="client-info">
+                                  <div class="d-flex align-items-center">
+                                    <img
+                                      src="/img/user3.d89e5759.jpg"
+                                      alt="image"
+                                    />
+                                    <div class="title">
+                                      <h3>Steven Smith</h3>
+                                      <span>CEO at Envato</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                        <ol class="carousel__pagination">
+                          <li class="carousel__pagination-item">
+                            <button
+                              type="button"
+                              class="carousel__pagination-button"
+                              aria-label="Navigate to slide 1"
+                            ></button>
+                          </li>
+                          <li class="carousel__pagination-item">
+                            <button
+                              type="button"
+                              class="carousel__pagination-button carousel__pagination-button--active"
+                              aria-label="Navigate to slide 2"
+                            ></button>
+                          </li>
+                          <li class="carousel__pagination-item">
+                            <button
+                              type="button"
+                              class="carousel__pagination-button"
+                              aria-label="Navigate to slide 3"
+                            ></button>
+                          </li>
+                        </ol>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="partner-area-two ptb-70 bg-f9f9f9">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-2 col-6 col-sm-3 col-md-4">
+                    <div class="single-partner-box">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAWCAYAAAAvrxV9AAAE5ElEQVRogd2ae6gVRRzHP6duaO8wS7OyNHpA7zT9p5cQIYLljQwhelhJEAXKlbQi6SmYUTfKikp7CNHjj0pDLAnLSIyirKigxOyJ2DtvN7n3em4MfBeGYXdnz+7MHrsfWDizO6/fntmZ3+8701g0/34sFgHXUpwVwN2e3BOBucBU4FDr/rfA68CDwA8ttHkw8F3O837gV2AT8DCwOSPfk8BFLbRr060rjXeA83X/XeCCnHrOAD6x0p3Aaxl5PwMO0u8mcCGwNafuuboMfwOn5eTdlvMsj1kdzsMRwDEtVDAi51kDuA9YqN8u42TgHOB64MWCbTY0iPIYCZwEXAV0ZfzZh7doq80hJctVYaxj9wPApZ4+Jvb95Wm37HsYvlcY21Ixg+fWjMFjsz/wAjA9Qh+MfQ9VmGn2ZDo9s1stuDPQWuDPFhrelHH/LM08Nh8BLwO/AOOBa4Cj9dwMsqeB44AeT5u9wOyc53sDlzgD8h7gLSffci03Zciyu2669a6bFdudV7LclrQBtDbAS+hyZp5lwM3AoHXPOF9rgHOVNkvK1cqbRx/wrCfPM8BGYLLSk4DRwHYrz+rqZrad04HrgKcqdiTLn/MSawmbZv3eKl9n0MljZporna9nGmFoykG3OT6Sre3GzK4HtqsPMQbQGMfJXAUMZOQ10dTHVvrEgP34w0nvU7DcRPkW5jolYH9Css6qaxRwW7s6EmMAuRHST5789vORAftxspP+vWA544ut13VvwP6EZKMTtc5TVFs7MQbQMCedNfvE5Ew56Qk7gS/b8YIjsgDYpeqHyae0+beOTnSUFJF8wlRojFh5ser06UANRXe2E79CzvdQ4ntgKXCHbLoMOA/YYNm8sKBm5fqnRRnXUVJE8glToRmriKMM3wB31tzfuliiKGyM2uuWD9eUXHKXdLBoxBQS9wTe0LZCK9rW/4l/JNYmuEv3o8BXMe1xdaAPHJGsJ8OH2ZVyr058wtcO2ZG3VzRUWAncBJwtexYDr8jvG9C7eslja2fJd7EjTUisOt33O+kYs1xp4atmfNs4IRiUzva+6hqlWSkJ7d9M0cRcsjZwvcT4c13/aLQn/2HW76Gw1Ng2HOnJe4ST3lmyzbSw/lgrvaBkvV5iDKCftV+VMDXnSzS6zwQrvaVCu2ZTdoZ1Ta9pBnCxbTB7eyfk5HWV9yr222H9cDnYCduzi1UjxgBqOkrpqdobczGbno87utG6lHxF6dXU/aouo4DPimCfjw3Oc3PuaL+UMlOAG6z0Ns85Jx9JWJ9wOXBOLCMTXB8oFI9oRzxhqTY0zTT7m6bXG3UvoUfaRVmMLzDf+QOXaP3vDWxfHms0EBJ5xESBn8u2r4EDdO8K5/0/FqDttLB+UoHd+rLHQjbHGkBvA8/rQFfCTF1ZdEm7qMJ7cghnqA4jKN5Ssw40oJMHq6x74z3bIl8o5K5KEtY/p3om6D/wnV5YX7LdKTF1oDkKJ32Yr+N2TfUhML7AbqseM4COimhnGqt1yrKI+v2p/MRQWw8mrP/QSi/WrBeFmAOoT+vwTGkyrlzep690sowMhVkmnrDq2tfxDepiuRzoZSm+Tb/C7tlSjn8M2KdB6yw0ivTcw33BMIfq7WWsGeB0WxYNDdiGjGy2sAfjRlNFypUpU6VckXoT20PVGYpyrgzs/g9P1fICrvr6BAAAAABJRU5ErkJggg=="
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-6 col-sm-3 col-md-4">
+                    <div class="single-partner-box">
+                      <img
+                        src="data:image/png;base64,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"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-6 col-sm-3 col-md-4">
+                    <div class="single-partner-box">
+                      <img
+                        src="data:image/png;base64,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"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-6 col-sm-3 col-md-4">
+                    <div class="single-partner-box">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAQCAYAAAAI/a3tAAAGfklEQVRogbVaW29VRRT+zj6n7am1lVKhWkOKVgsolFYFAQUsog8aguiLGq/xAS9PRp/8BeqL0Sfjg8ZEjUYNQdGIiTci9EJBCxUvaFGphVa52ZZLrRyzkm90Odmz98w+9Ut2us/ea69ZM7Pu09zcuqX3AbgS/yIHN0oAfgXwHIAzMVQ3AVgPYArANwBeSOAlWAXgdo65C8ArDro7ACz3lFEwCuBZABMJNJ0AbvXgKXP+DcBHAHpTxhW0A3iA918BeNnjG19cDmCjon0VwM6A768GcI/6/T7nFYcWAA8DqADwO4BnHHsuqAHwGIBZ6lmaHvUUAFQBKAZMQAaIHO/6AKwjvw5O4EcHbY7KZ8belTBmqIyzAeRTaAoBPOcAeJCL359Cm1N8Kz35+2K1JfPyQOWLrO83APgJwPeOeVQHrFMxcI/qC/RSBt/RY1U7NLeSXuBPB8Oj9A7X8feSBOW7gpsq+BbAQIKgerz9APZRxjiIpY4lWKnBWXV/EMAefhup97I2iwFcxGe3ANhrfZvEdzJFhhDM4ZppXMrnBz352HLLXO8H8BSAP2JoJ6l8k/RWSTB7VKITGnEYX4mecn/BetENYEeZi7QdwDIKvQjAFgDjMXTXqnsfb2LQxTGmE6L87zr4fQLgcQAXAmgG0Ep6H6SlByFYReM4yauBEWElgNfL4Ct87vJIkXwhBrsJwJE0ejt8pmm3DwbV5pzPPCNuwvN5P8bcyBdJXicrkpRkjB7d4Lz/Yfw0nAtgIWlkfZ8HcJi/2wCcUyZ/SZHWTKO8Ux40sD3fBVQME35KdJ3jPpqssFMtloTebZbSLFQLttva3DQ0xshYRSUJkVFjJvlGKlc0YWcxvR1YwPyQcYxy0EoZwdRohH/FG9cDWJCSM8dhlKlOJ41P8r/hAK/ugqzfZcwlTdjNcW2P6iLQVr61DId5flDiJouCvBQgQD9zw1nMS3SoiqzKtTtwcjcyp8wr5StkkFGjnZ44p7yg8P2LXsegqwwFLwcrlUwmRenlXsn+XMP5h0Qu6Vq8CeA4gNuoKNL5eJrPsqYMJo88owzZrOtmAB9rQg3ZxFp6pWr+rWD4DMEpLobBCnV/sSo0xDp+DuStZSxSzgrlGbIgUnMuKr5a8cR43itjjKyYq1KUAXossJAzXngR6UJg5rYVwNe8n8m2Fhg6XV2NNFSQf7Va0yp66X9gez6T3+SV5stHv2QQoJd5hAgyj+2PUXo9M+4X9C4hMCmA9nwyuaGMCwUm8EfIK2J1a+Y/SO+83TeXmWYsU0rQrTz9FA1iAd+L9zsQMLT2ktJffRLADOZ/K5g6jQe2TwxMeDVyR7xGNJGtfGIFn6oYbcJuWtsiDkO01A5OqplCdZD2pEeVG4etrECnQ0aDPoYgkO96hndwHp+Xwbsc1DPnNFjNFKGK0aVRvbsKwIcMmaE4wYr5EX63gcadpVU0xfTnQEzYPa0JbeU7HmPd5fSqtillEwtuUu6+L6a35IMT0yyj+V7z3MxNn00vsIf9vVCU6ynnW+lEawJtHRXzs4xj9TOtWEded2fsLIgzOMS5J87fjuk16j4Xc0WBecAgKyiwwr2Z92epmFmg2wpxMho5QxJmuxkqDdMPeC8Geic3JBTauF2yJqFdvZugsZ5S14Tl8dsyrqnBFjbxDbLkfDlGOiTMV9Ylsj3fGuZnBcfCFKlMbyWccmicZuHRZD3fF9CVt9FJD+CSsZIe/A2Gdh/EVYldPPNuY2tHwvA7gbKKwT1K/nlrnAI3921HTt2i2lWyVi9yzavJJ8ffRZ7XNjP/a3Ucl/niNQBPWMVWCGRe9zLFsvUL6oRjb8FakEYrj4hDXaBF9FCptccKOY+04SOjT6vApy2xiUogi3UDFXLY4zuDGg9v5PKoS9Xmdasq91gMbTeVL+JJiEv5SkpxXTjEf1h4yGuG/+Vt0MwrCcci5SJ9UeVxaK8xyp6SwUTKOW4cagPpaxxWZ9MYuPgPU+HAOW9MOFOO4+uDihiaSwBcz/spq20VBx0qlyRsfK1SvKQ04ksrLWpIcTh50oQgL/9SNY8nGz4tj4h5x0BgMt2sLPNwhi56C9sfJQ+PFTEP2p2SGjSpBH4o4eRiBvtoxuB6mHO50MDwl0uR1SiBFDJ2hSqyCQ/ZE2nWmz5cEi/JD83Rn/CMa4ZLASVFjKyRvE8qoiRSSQUt85aWi6ynqwARQ5fCUgzTp0gpABj+G8otYbivADgBAAAAAElFTkSuQmCC"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-6 col-sm-3 col-md-4">
+                    <div class="single-partner-box">
+                      <img
+                        src="data:image/png;base64,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"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-6 col-sm-3 col-md-4">
+                    <div class="single-partner-box">
+                      <img
+                        src="data:image/png;base64,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"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-area-two pt-100 pb-70">
+              <div class="container">
+                <div class="section-title text-left">
+                  <span class="sub-title">Our Team</span>
+                  <h2>We Help to Acheive Your Business Goal</h2>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                      <div class="image">
+                        <img src="/img/9.03a9c8e6.jpg" alt="team-image" />
+                        <ul class="social-link">
+                          <li>
+                            <a href="https://www.facebook.com/" target="_blank"
+                              ><i class="bx bxl-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/" target="_blank"
+                              ><i class="bx bxl-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/" target="_blank"
+                              ><i class="bx bxl-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/" target="_blank"
+                              ><i class="bx bxl-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content">
+                        <h3>James Anderson</h3>
+                        <span>CEO &amp; Founder</span
+                        ><i class="bx bx-share-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                      <div class="image">
+                        <img src="/img/10.9b403fe8.jpg" alt="team-image" />
+                        <ul class="social-link">
+                          <li>
+                            <a href="https://www.facebook.com/" target="_blank"
+                              ><i class="bx bxl-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/" target="_blank"
+                              ><i class="bx bxl-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/" target="_blank"
+                              ><i class="bx bxl-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/" target="_blank"
+                              ><i class="bx bxl-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content">
+                        <h3>Sarah Taylor</h3>
+                        <span>Marketing Lead</span
+                        ><i class="bx bx-share-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                      <div class="image">
+                        <img src="/img/11.6ea95739.jpg" alt="team-image" />
+                        <ul class="social-link">
+                          <li>
+                            <a href="https://www.facebook.com/" target="_blank"
+                              ><i class="bx bxl-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/" target="_blank"
+                              ><i class="bx bxl-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/" target="_blank"
+                              ><i class="bx bxl-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/" target="_blank"
+                              ><i class="bx bxl-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content">
+                        <h3>Taylor Sopia</h3>
+                        <span>Web Designer</span><i class="bx bx-share-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                      <div class="image">
+                        <img src="/img/12.89850fd5.jpg" alt="team-image" />
+                        <ul class="social-link">
+                          <li>
+                            <a href="https://www.facebook.com/" target="_blank"
+                              ><i class="bx bxl-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/" target="_blank"
+                              ><i class="bx bxl-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/" target="_blank"
+                              ><i class="bx bxl-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/" target="_blank"
+                              ><i class="bx bxl-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content">
+                        <h3>Harry Steve</h3>
+                        <span>Web Developer</span
+                        ><i class="bx bx-share-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-area pt-100 pb-70 bg-f4e9da">
+              <div class="container">
+                <div class="section-title text-left">
+                  <span class="sub-title">Our News</span>
+                  <h2>Check Out Our Latest Blog</h2>
+                </div>
+                <div class="blog-slides">
+                  <section class="carousel" aria-label="Gallery">
+                    <div class="carousel__viewport">
+                      <ol
+                        class="carousel__track"
+                        style="
+                          transform: translateX(-522px);
+                          transition: all 0ms ease 0s;
+                        "
+                      >
+                        <li
+                          class="carousel__slide"
+                          style="width: 50%; order: 0"
+                        >
+                          <div class="single-blog-post-item">
+                            <div class="post-image">
+                              <a href="#" class="d-block"
+                                ><img src="/img/6.59a1d8ee.jpg" alt="image"
+                              /></a>
+                            </div>
+                            <div class="post-content">
+                              <a href="#" class="category">EDUCATION</a>
+                              <h3>
+                                <a href="#"
+                                  >Customer Satisfaction for a Digital Marketing
+                                  Agency</a
+                                >
+                              </h3>
+                              <ul
+                                class="post-content-footer d-flex justify-content-between align-items-center"
+                              >
+                                <li>
+                                  <div
+                                    class="post-author d-flex align-items-center"
+                                  >
+                                    <img
+                                      src="/img/9.33226795.jpg"
+                                      class="rounded-circle"
+                                      alt="image"
+                                    /><span>Alex Morgan</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <i class="bx bx-calendar"></i> April 30, 2022
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="carousel__slide carousel__slide--prev"
+                          style="width: 50%; order: 1"
+                        >
+                          <div class="single-blog-post-item">
+                            <div class="post-image">
+                              <a href="#" class="d-block"
+                                ><img src="/img/9.14c69d5d.jpg" alt="image"
+                              /></a>
+                            </div>
+                            <div class="post-content">
+                              <a href="#" class="category">SEO</a>
+                              <h3>
+                                <a href="#"
+                                  >Customer Satisfaction for a Digital Marketing
+                                  Agency</a
+                                >
+                              </h3>
+                              <ul
+                                class="post-content-footer d-flex justify-content-between align-items-center"
+                              >
+                                <li>
+                                  <div
+                                    class="post-author d-flex align-items-center"
+                                  >
+                                    <img
+                                      src="/img/8.f6ae8d58.jpg"
+                                      class="rounded-circle"
+                                      alt="image"
+                                    /><span>James Smith</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <i class="bx bx-calendar"></i> April 29, 2022
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="carousel__slide carousel__slide--active carousel__slide--visible"
+                          style="width: 50%; order: 2"
+                        >
+                          <div class="single-blog-post-item">
+                            <div class="post-image">
+                              <a href="#" class="d-block"
+                                ><img src="/img/8.c48d380c.jpg" alt="image"
+                              /></a>
+                            </div>
+                            <div class="post-content">
+                              <a href="#" class="category">Business</a>
+                              <h3>
+                                <a href="#"
+                                  >Customer Satisfaction for a Digital Marketing
+                                  Agency</a
+                                >
+                              </h3>
+                              <ul
+                                class="post-content-footer d-flex justify-content-between align-items-center"
+                              >
+                                <li>
+                                  <div
+                                    class="post-author d-flex align-items-center"
+                                  >
+                                    <img
+                                      src="/img/7.f3feee41.jpg"
+                                      class="rounded-circle"
+                                      alt="image"
+                                    /><span>Sarah Taylor</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <i class="bx bx-calendar"></i> April 28, 2022
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="carousel__slide carousel__slide--next"
+                          style="width: 50%; order: 3"
+                        >
+                          <div class="single-blog-post-item">
+                            <div class="post-image">
+                              <a href="#" class="d-block"
+                                ><img src="/img/7.6c1277ac.jpg" alt="image"
+                              /></a>
+                            </div>
+                            <div class="post-content">
+                              <a href="#" class="category">Business</a>
+                              <h3>
+                                <a href="#"
+                                  >Customer Satisfaction for a Digital Marketing
+                                  Agency</a
+                                >
+                              </h3>
+                              <ul
+                                class="post-content-footer d-flex justify-content-between align-items-center"
+                              >
+                                <li>
+                                  <div
+                                    class="post-author d-flex align-items-center"
+                                  >
+                                    <img
+                                      src="/img/6.91b23f6b.jpg"
+                                      class="rounded-circle"
+                                      alt="image"
+                                    /><span>Andro Lucy</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <i class="bx bx-calendar"></i> April 27, 2022
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+                    </div>
+                    <button
+                      type="button"
+                      class="carousel__prev"
+                      aria-label="Navigate to previous slide"
+                    >
+                      <svg
+                        class="carousel__icon"
+                        viewBox="0 0 24 24"
+                        role="img"
+                        ariaLabel="arrowLeft"
+                      >
+                        <title>arrowLeft</title>
+                        <path
+                          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      class="carousel__next"
+                      aria-label="Navigate to next slide"
+                    >
+                      <svg
+                        class="carousel__icon"
+                        viewBox="0 0 24 24"
+                        role="img"
+                        ariaLabel="arrowRight"
+                      >
+                        <title>arrowRight</title>
+                        <path
+                          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="company-preview-area">
+                <div class="container">
+                  <div class="company-preview-video">
+                    <div
+                      class="video-btn popup-youtube"
+                      style="cursor: pointer"
+                    >
+                      <i class="bx bx-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="lets-talk-area ptb-100">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-8 col-md-12">
+                    <div class="lets-talk-content">
+                      <span class="sub-title">Let’s Talk</span>
+                      <h2>Get Started A Project?</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                        Risus commodo viverra maecenas accumsan lacus vel
+                        facilisis.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="lets-talk-btn">
+                      <a href="/contact" class="default-btn"
+                        ><i class="bx bxs-hot"></i>Contact Us<span></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="footer-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                      <div class="logo">
+                        <a href="/" class=""
+                          ><img
+                            src="data:image/png;base64,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"
+                            alt="image"
+                        /></a>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                      <h3>Company</h3>
+                      <ul class="services-list">
+                        <li><a href="/about" class="">About Us</a></li>
+                        <li><a href="/services-one" class="">Services</a></li>
+                        <li><a href="/features-one" class="">Features</a></li>
+                        <li><a href="/pricing" class="">Our Pricing</a></li>
+                        <li><a href="/blog-one" class="">Latest News</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                      <h3>Support</h3>
+                      <ul class="support-list">
+                        <li><a href="/faq" class="">FAQ's</a></li>
+                        <li><a href="/#" class="">Privacy Policy</a></li>
+                        <li>
+                          <a href="/#" class="">Terms &amp; Conditions</a>
+                        </li>
+                        <li><a href="/about" class="">Community</a></li>
+                        <li><a href="/contact" class="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                      <h3>Contact Info</h3>
+                      <ul class="footer-contact-info">
+                        <li>
+                          Location:
+                          <a
+                            href="https://goo.gl/maps/MQ78iGP5g9VgZcJ38"
+                            target="_blank"
+                            >6th Floor, Elegant Tower, York, USA</a
+                          >
+                        </li>
+                        <li>
+                          Email:
+                          <a href="mailto:hello@striki.com">hello@striki.com</a>
+                        </li>
+                        <li>
+                          Phone: <a href="tel:+321754754">+0 (321) 984 754</a>
+                        </li>
+                      </ul>
+                      <ul class="social">
+                        <li>
+                          <a href="https://www.facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="copyright-area">
+                  <p>
+                    ©
+                    <a href="http://hibotheme.com/" target="_blank"
+                      >HiboTheme.com</a
+                    >
+                    All rights reserved by Striki
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div class="back-to-top-btn"><i class="bx bx-chevron-up"></i></div>
+        </div>
+      </div>
+      <script src="/js/chunk-vendors.3661eb09.js"></script>
+      <script src="/js/app.da0940a0.js"></script>
+    </body>
+  </body>
+</html>
