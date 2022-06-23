@@ -1,0 +1,713 @@
+<head>
+    <style>
+        .anticon {
+            display: inline-block;
+            color: inherit;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .anticon>* {
+            line-height: 1;
+        }
+
+        .anticon svg {
+            display: inline-block;
+        }
+
+        .anticon::before {
+            display: none;
+        }
+
+        .anticon .anticon-icon {
+            display: block;
+        }
+
+        .anticon[tabindex] {
+            cursor: pointer;
+        }
+
+        .anticon-spin::before,
+        .anticon-spin {
+            display: inline-block;
+            -webkit-animation: loadingCircle 1s infinite linear;
+            animation: loadingCircle 1s infinite linear;
+        }
+
+        @-webkit-keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salinaka | Home</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <script defer="defer" src="/js/vendor.f42d28005320a0b72169.js"></script>
+    <script defer="defer" src="/js/main.d2396263f50d632d158f.js"></script>
+    <link href="/vendor.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal" media="all">
+    <link href="/main.css" rel="stylesheet">
+    <style type="text/css">
+        button.btn[data-v-5f0b9ba1] {
+            display: inline-block;
+            font-weight: 300;
+            line-height: 1.25;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: all .15s ease
+        }
+
+        button.btn.btn-sm[data-v-5f0b9ba1] {
+            padding: .4rem .8rem;
+            font-size: .8rem;
+            border-radius: .2rem
+        }
+
+        button.btn.btn-primary[data-v-5f0b9ba1] {
+            color: #fff;
+            background-color: #45C8F1;
+            border-color: #45C8F1
+        }
+
+        button.btn.btn-outline-primary[data-v-5f0b9ba1] {
+            color: #45C8F1;
+            background-color: transparent;
+            border-color: #45C8F1
+        }
+
+        button.btn.btn-danger[data-v-5f0b9ba1] {
+            color: #fff;
+            background-color: #FF4949;
+            border-color: #FF4949
+        }
+
+        .text-muted[data-v-5f0b9ba1] {
+            color: #8492A6
+        }
+
+        .text-center[data-v-5f0b9ba1] {
+            text-align: center
+        }
+
+        .drop-down-enter[data-v-5f0b9ba1],
+        .drop-down-leave-to[data-v-5f0b9ba1] {
+            transform: translateX(0) translateY(-20px);
+            transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+            opacity: 0
+        }
+
+        .drop-down-enter-active[data-v-5f0b9ba1],
+        .drop-down-leave-active[data-v-5f0b9ba1] {
+            transition: all .15s
+        }
+
+        .move-left-enter[data-v-5f0b9ba1],
+        .move-left-leave-to[data-v-5f0b9ba1] {
+            transform: translateY(0) translateX(-80px);
+            transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+            opacity: 0
+        }
+
+        .move-left-enter-active[data-v-5f0b9ba1],
+        .move-left-leave-active[data-v-5f0b9ba1] {
+            transition: all .15s
+        }
+
+        .no-tr[data-v-5f0b9ba1] {
+            transition: none !important
+        }
+
+        .no-tr *[data-v-5f0b9ba1] {
+            transition: none !important
+        }
+
+        .overlay[data-v-5f0b9ba1] {
+            position: fixed;
+            background: rgba(220, 220, 220, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all 0.2s ease;
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .overlay .modal[data-v-5f0b9ba1] {
+            transition: all 0.2s ease;
+            opacity: 0;
+            transform: scale(0.6);
+            overflow: hidden
+        }
+
+        .overlay.show[data-v-5f0b9ba1] {
+            opacity: 1;
+            visibility: visible
+        }
+
+        .overlay.show .modal[data-v-5f0b9ba1] {
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .panel[data-v-5f0b9ba1] {
+            padding: 6px 10px;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid #eaf7ff;
+            background: #f7fcff;
+            outline: none;
+            transition: all 0.07s ease-in-out
+        }
+
+        .btn[data-v-5f0b9ba1] {
+            cursor: pointer;
+            box-sizing: border-box
+        }
+
+        .light-btn[data-v-5f0b9ba1] {
+            padding: 6px 10px;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid #eaf7ff;
+            background: #f7fcff;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.07s ease-in-out
+        }
+
+        .light-btn[data-v-5f0b9ba1]:hover {
+            background: #e0f4ff;
+            border-color: #8acfff
+        }
+
+        .shake[data-v-5f0b9ba1] {
+            animation: shake-data-v-5f0b9ba1 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            transform: translate3d(0, 0, 0)
+        }
+
+        @keyframes shake-data-v-5f0b9ba1 {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0)
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0)
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0)
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0)
+            }
+        }
+
+        .pulse[data-v-5f0b9ba1] {
+            animation: pulse-data-v-5f0b9ba1 2s ease infinite
+        }
+
+        @keyframes pulse-data-v-5f0b9ba1 {
+            0% {
+                opacity: .7
+            }
+
+            50% {
+                opacity: .4
+            }
+
+            100% {
+                opacity: .7
+            }
+        }
+
+        .flash-once[data-v-5f0b9ba1] {
+            animation: flash-once 3.5s ease 1
+        }
+
+        @keyframes fade-up-data-v-5f0b9ba1 {
+            0% {
+                transform: translate3d(0, 10px, 0);
+                opacity: 0
+            }
+
+            100% {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        .fade-in[data-v-5f0b9ba1] {
+            animation: fade-in-data-v-5f0b9ba1 .3s ease-in-out
+        }
+
+        @keyframes fade-in-data-v-5f0b9ba1 {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        .spin[data-v-5f0b9ba1] {
+            animation-name: spin-data-v-5f0b9ba1;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear
+        }
+
+        @keyframes spin-data-v-5f0b9ba1 {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .bounceIn[data-v-5f0b9ba1] {
+            animation-name: bounceIn-data-v-5f0b9ba1;
+            transform-origin: center bottom;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: 1
+        }
+
+        @keyframes bounceIn-data-v-5f0b9ba1 {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            80%,
+            100% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+            }
+
+            0% {
+                opacity: 1;
+                -webkit-transform: scale3d(0.8, 0.8, 0.8);
+                transform: scale3d(0.8, 0.8, 0.8)
+            }
+
+            20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1)
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.9, 0.9, 0.9);
+                transform: scale3d(0.9, 0.9, 0.9)
+            }
+
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03)
+            }
+
+            80% {
+                -webkit-transform: scale3d(0.97, 0.97, 0.97);
+                transform: scale3d(0.97, 0.97, 0.97)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        @keyframes dots-data-v-5f0b9ba1 {
+
+            0%,
+            20% {
+                color: rgba(0, 0, 0, 0);
+                text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            40% {
+                color: #8492A6;
+                text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            60% {
+                text-shadow: 0.25em 0 0 #8492A6, 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            80%,
+            100% {
+                text-shadow: .25em 0 0 #8492A6, .5em 0 0 #8492A6
+            }
+        }
+
+        @keyframes recording-data-v-5f0b9ba1 {
+            0% {
+                box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3)
+            }
+
+            65% {
+                box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3)
+            }
+
+            90% {
+                box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0)
+            }
+        }
+
+        body[data-v-5f0b9ba1] {
+            margin: 0;
+            font-size: 100%;
+            color: #3C4858
+        }
+
+        a[data-v-5f0b9ba1] {
+            text-decoration: none;
+            color: #45C8F1
+        }
+
+        h1[data-v-5f0b9ba1],
+        h2[data-v-5f0b9ba1],
+        h3[data-v-5f0b9ba1],
+        h4[data-v-5f0b9ba1] {
+            margin-top: 0
+        }
+
+        svg[data-v-5f0b9ba1] {
+            outline: none
+        }
+
+        .container_selected_area[data-v-5f0b9ba1] {
+            display: none;
+            visibility: hidden;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2147483647
+        }
+
+        .container_selected_area.active[data-v-5f0b9ba1] {
+            visibility: visible;
+            display: block
+        }
+
+        .container_selected_area .label[data-v-5f0b9ba1] {
+            font-family: "Didact Gothic Regular", sans-serif;
+            font-size: 22px;
+            text-align: center;
+            padding-top: 15px
+        }
+
+        .container_selected_area .area[data-v-5f0b9ba1] {
+            display: none;
+            position: fixed;
+            z-index: 2147483647;
+            border: 1px solid #1e83ff;
+            background: rgba(30, 131, 255, 0.1);
+            box-sizing: border-box
+        }
+
+        .container_selected_area .area.active[data-v-5f0b9ba1] {
+            display: block;
+            top: 0;
+            left: 0
+        }
+
+        .hide[data-v-5f0b9ba1] {
+            display: none
+        }
+    </style>
+    <style data-emotion="css"></style>
+</head>
+
+
+<body>
+    <div id="app">
+        <nav class="navigation">
+            <div class="logo"><a href="/"><img alt="Logo"
+                        src="/images/logo-full.059e10fa5fedbfb65165e7565ed3936f.png"></a></div>
+            <ul class="navigation-menu-main">
+                <li><a href="/" aria-current="page" class="navigation-menu-active">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/featured">Featured</a></li>
+                <li><a href="/recommended">Recommended</a></li>
+            </ul>
+            <div class="searchbar"><span role="img" aria-label="search"
+                    class="anticon anticon-search searchbar-icon"><svg viewBox="64 64 896 896" focusable="false"
+                        data-icon="search" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                        </path>
+                    </svg></span><input class="search-input searchbar-input" placeholder="Search product..." type="text"
+                    value=""></div>
+            <ul class="navigation-menu">
+                <li class="navigation-menu-item"><button class="button-link navigation-menu-link basket-toggle"
+                        type="button">
+                        <div class="badge"><span role="img" aria-label="shopping" class="anticon anticon-shopping"
+                                style="font-size: 2.4rem;"><svg viewBox="64 64 896 896" focusable="false"
+                                    data-icon="shopping" width="1em" height="1em" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-432-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16H400v-16zm392 544H232V384h96v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h224v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h96v456z">
+                                    </path>
+                                </svg></span></div>
+                    </button></li>
+                <li class="navigation-action"><a class="button button-small" href="/signup">Sign Up</a><a
+                        class="button button-small button-muted margin-left-s" href="/signin">Sign In</a></li>
+            </ul>
+        </nav>
+        <div class="basket">
+            <div class="basket-list">
+                <div class="basket-header">
+                    <h3 class="basket-header-title">My Basket &nbsp;<span>( 0 item)</span></h3><span
+                        class="basket-toggle button button-border button-border-gray button-small"
+                        role="presentation">Close</span><button
+                        class="basket-clear button button-border button-border-gray button-small" disabled=""
+                        type="button"><span>Clear Basket</span></button>
+                </div>
+                <div class="basket-empty">
+                    <h5 class="basket-empty-msg">Your basket is empty</h5>
+                </div>
+            </div>
+            <div class="basket-checkout">
+                <div class="basket-total">
+                    <p class="basket-total-title">Subtotal Amout:</p>
+                    <h2 class="basket-total-amount">$0.00</h2>
+                </div><button class="basket-checkout-button button" disabled="" type="button">Check Out</button>
+            </div>
+        </div>
+        <main class="content">
+            <div class="home">
+                <div class="banner">
+                    <div class="banner-desc">
+                        <h1 class="text-thin"><strong>See</strong>&nbsp;everything with&nbsp;<strong>Clarity</strong>
+                        </h1>
+                        <p>Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses,
+                            sunglasses, and contacts—we’ve got your eyes covered.</p><br><a class="button"
+                            href="/shop">Shop Now &nbsp;<span role="img" aria-label="arrow-right"
+                                class="anticon anticon-arrow-right"><svg viewBox="64 64 896 896" focusable="false"
+                                    data-icon="arrow-right" width="1em" height="1em" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z">
+                                    </path>
+                                </svg></span></a>
+                    </div>
+                    <div class="banner-img"><img src="/images/banner-girl.789f1fa6f451ad26c5039fcbc049ace7.png" alt="">
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="display-header">
+                        <h1>Featured Products</h1><a href="/featured">See All</a>
+                    </div>
+                    <div class="product-display-grid">
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&amp;token=be15689c-e12c-4829-9d78-32395ef1e3f7">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Burnikk</h2>
+                                    <p class="text-subtle text-italic">Sexbomb</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FALz5M4DI7MF7CdZrq3gS?alt=media&amp;token=8d33ea34-2de3-466b-9b3d-27015e9cd540">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Kibal Batal</h2>
+                                    <p class="text-subtle text-italic">Kibal Black</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FLIu8tS4yHSU28Xi8BXCj?alt=media&amp;token=31e796ad-dbd6-4e4f-a8a9-192f5158684a">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Very Nice</h2>
+                                    <p class="text-subtle text-italic">Salt maalat</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FYVPdTsyxJybMCsdKpXhq?alt=media&amp;token=23d7673c-a0bf-4dcb-89f1-8482446b56be">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Buldit</h2>
+                                    <p class="text-subtle text-italic">Salt Maalat</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FYZ7LM3vZjWbIIJH2tgEb?alt=media&amp;token=5e722063-a792-4502-9f6e-c3df1581aa9c">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Balakubak</h2>
+                                    <p class="text-subtle text-italic">Betsin Maalat</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FbS1hHdO7NvbR1yN5ZPlR?alt=media&amp;token=809a3249-f83d-4aec-b134-34a65ce2ce10">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Tiktilaok Manok</h2>
+                                    <p class="text-subtle text-italic">Sexbomb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="display-header">
+                        <h1>Recommended Products</h1><a href="/recommended">See All</a>
+                    </div>
+                    <div class="product-display-grid">
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&amp;token=be15689c-e12c-4829-9d78-32395ef1e3f7">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Burnikk</h2>
+                                    <p class="text-subtle text-italic">Sexbomb</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FALz5M4DI7MF7CdZrq3gS?alt=media&amp;token=8d33ea34-2de3-466b-9b3d-27015e9cd540">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Kibal Batal</h2>
+                                    <p class="text-subtle text-italic">Kibal Black</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FLIu8tS4yHSU28Xi8BXCj?alt=media&amp;token=31e796ad-dbd6-4e4f-a8a9-192f5158684a">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Very Nice</h2>
+                                    <p class="text-subtle text-italic">Salt maalat</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FYIZuxWur1W4fAT6z3ejk?alt=media&amp;token=7dca264f-c345-4cfc-93a8-60217a53f66a">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Kulangot</h2>
+                                    <p class="text-subtle text-italic">Salt</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FYjDAQSbkSZlartelhFyV?alt=media&amp;token=9b0bdd5e-eb91-4d99-a52f-298c12879fa3">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Sipon Malapot</h2>
+                                    <p class="text-subtle text-italic">salt</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-vbgp86-SkeletonTheme">
+                            <div class="product-display" role="presentation">
+                                <div class="product-display-img"><img alt="" class="product-card-img is-img-loaded"
+                                        src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2FaubOenOJu42CNp4zXTLX?alt=media&amp;token=1d5fd281-b9cc-499b-94a5-225273b1eabc">
+                                </div>
+                                <div class="product-display-details">
+                                    <h2>Pitaklan</h2>
+                                    <p class="text-subtle text-italic">Black Kibal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-col-1"><strong><span>Developed by <a href="https://github.com/jgudo">JULIUS
+                            GUEVARRA</a></span></strong></div>
+            <div class="footer-col-2"><img alt="Footer logo" class="footer-logo"
+                    src="/images/logo-full.059e10fa5fedbfb65165e7565ed3936f.png">
+                <h5>©&nbsp;2022</h5>
+            </div>
+            <div class="footer-col-3"><strong><span>Fork this project &nbsp;<a
+                            href="https://github.com/jgudo/ecommerce-react">HERE</a></span></strong></div>
+        </footer>
+    </div>
+    <div id="scrnli_recorder_root"></div><iframe
+        src="chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/audio-devices.html" allow="microphone"
+        style="display: none;"></iframe><input type="file" id="" name="file" style="display: none;">
+    <div data-v-5f0b9ba1="" class="container_selected_area"
+        style="cursor: url(&quot;chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;">
+        <div data-v-5f0b9ba1="" class="area"></div>
+    </div>
+    <div class="ReactModalPortal"></div>
+</body>
