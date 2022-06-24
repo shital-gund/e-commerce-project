@@ -6,7 +6,7 @@ const NavbarData = [
     },
     {
         id: 2,
-        path: "/about",
+        path: "/shop",
         menu: "Shop"
     },
     {

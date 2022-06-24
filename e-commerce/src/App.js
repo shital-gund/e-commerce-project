@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route } from 'react-router-dom'
 import Home from './theme-layout/Home/Home'
+import Shop from "./theme-layout/Shop/Shop";
 // import About from './theme-layout/components/about/About'
 // import Pricing from './theme-layout/components/pricing/Pricing'
 // import Pages from './theme-layout/components/pages/Pages'
@@ -13,7 +14,7 @@ function App() {
     <Routes>
       <Route exact path="/home" element={<Home />} />
       {/* <Route exact path="/" element = {<Home />} /> */}
-      <Route exact path="/about" element={<Home />} />
+      <Route exact path="/shop" element={<Shop />} />
       <Route exact path="/page" element={<Home />} />
       <Route exact path="/blog" element={<Home />} />
       <Route exact path="/contact" element={<Home />} />
