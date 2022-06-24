@@ -16,13 +16,11 @@ const Navbar = () => {
             <a href="/home" className="navbar-brand">
               <img src={logo} alt="logo" />
             </a>
-
             <div className="navbar-toggler" aria-pressed="false">
               <span className="icon-bar top-bar"></span>
               <span className="icon-bar middle-bar"></span>
               <span className="icon-bar bottom-bar"></span>
             </div>
-
             <div className="collapse navbar-collapse" is-nav="">
               <ul className="navbar-nav">
                 {NavbarData.map((nav) => {
@@ -36,10 +34,10 @@ const Navbar = () => {
                 })}
               </ul>
               <submit> <Form.Control type="email" placeholder="Search Product" /></submit>
-              <NavLink exact to="/home" className=""> <i className={"bx bx-cart"}></i> </NavLink>
+              <NavLink exact to="/home" className="me-4"> <i className={"bx bx-cart"}></i> </NavLink>
               <div className="others-options">
-                <a class="button button-small" href="/signup">Sign Up</a><span> </span><a
-                  class="button button-small button-muted margin-left-s" href="/signin">Sign In</a>
+                <button type='button' className="button button-small btn btn-dark" href="/signup">Sign Up</button> <span> </span><button type='button'
+                  className="button button-small button-muted margin-left-s btn btn-light" href="/signin">Sign In</button>
               </div>
             </div>
           </nav>
