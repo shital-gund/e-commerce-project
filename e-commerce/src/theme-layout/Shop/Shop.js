@@ -18,17 +18,42 @@ const Shop = () => {
         setItem(updatedItems)
     }
 
+    const filterPrice = (categprice) => {
+
+        const updatedItems = item.filter((curElem1) => {
+            return curElem1.price < categprice
+        });
+
+        setItem(updatedItems)
+    }
+
+    const filterPrice1 = (categprice1) => {
+
+        const updatedItems = item.filter((curElem2) => {
+            return curElem2.price > categprice1
+        });
+
+        setItem(updatedItems)
+    }
+
+
+
     return (
         <>
             <h1 className='mt-5 text-center main-heading'> Our Product</h1>
             <hr />
 
-           <DropdownButton id="dropdown-basic-button" title="Product Type" className='text-center'>
+            <DropdownButton id="dropdown-basic-button" title="Product Type" className='text-center'>
                 <Dropdown.Item href="#/action-1" onClick={() => filterItem("Black Kibal")}>Black Kibal</Dropdown.Item>
                 <Dropdown.Item href="#/action-2" onClick={() => filterItem("Salt")}>Salt</Dropdown.Item>
-                <Dropdown.Item href="#/action-3"onClick={() => filterItem("Sexbomb")}>Sexbomb</Dropdown.Item>
-                <Dropdown.Item href="#/action-3"onClick={() => filterItem("Yezyow")}>Yezyow</Dropdown.Item>
-                <Dropdown.Item href="#/action-3"onClick={() => setItem(ShopData)}>All</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={() => filterItem("Sexbomb")}>Sexbomb</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={() => filterItem("Yezyow")}>Yezyow</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={() => setItem(ShopData)}>All</Dropdown.Item>
+            </DropdownButton>
+            <br></br>
+            <DropdownButton id="dropdown-basic-button" title="Price filter" className='text-center'>
+                <Dropdown.Item href="#/action-1" onClick={() => filterPrice("51")}>1-50</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={() => filterPrice1("51")}>51-100</Dropdown.Item>
             </DropdownButton>
 
             <br></br><br></br>
@@ -42,6 +67,9 @@ const Shop = () => {
                                     <Card.Title>{data.title}</Card.Title>
                                     <Card.Text>
                                         {data.type}
+                                    </Card.Text>
+                                    <Card.Text>
+                                        ${data.price}
                                     </Card.Text>
                                     <Button variant="primary">Add to Basket</Button>
                                 </Card.Body>
