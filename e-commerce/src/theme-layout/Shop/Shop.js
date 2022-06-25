@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import ShopData from './ShopData'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 const Shop = () => {
 
@@ -18,19 +20,17 @@ const Shop = () => {
 
     return (
         <>
-
             <h1 className='mt-5 text-center main-heading'> Our Product</h1>
             <hr />
-            <h2 className='text-center'>Product Type</h2>
-            <div className='menu-tabs container'>
-                <div className='menu-tab d-flex justify-content-around'>
-                    <button className='btn btn-warning' onClick={() => filterItem("Black Kibal")}>Black Kibal</button>
-                    <button className='btn btn-warning' onClick={() => filterItem("Salt")}>Salt</button>
-                    <button className='btn btn-warning' onClick={() => filterItem("Sexbomb")}>Sexbomb</button>
-                    <button className='btn btn-warning' onClick={() => filterItem("Yezyow")}>Yezyow</button>
-                    <button className='btn btn-warning' onClick={() => setItem(ShopData)}>All</button>
-                </div>
-            </div>
+
+           <DropdownButton id="dropdown-basic-button" title="Product Type" className='text-center'>
+                <Dropdown.Item href="#/action-1" onClick={() => filterItem("Black Kibal")}>Black Kibal</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={() => filterItem("Salt")}>Salt</Dropdown.Item>
+                <Dropdown.Item href="#/action-3"onClick={() => filterItem("Sexbomb")}>Sexbomb</Dropdown.Item>
+                <Dropdown.Item href="#/action-3"onClick={() => filterItem("Yezyow")}>Yezyow</Dropdown.Item>
+                <Dropdown.Item href="#/action-3"onClick={() => setItem(ShopData)}>All</Dropdown.Item>
+            </DropdownButton>
+
             <br></br><br></br>
             <div className='row '>
                 {item.map((data) => {
