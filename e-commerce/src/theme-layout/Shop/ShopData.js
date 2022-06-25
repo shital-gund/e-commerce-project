@@ -4,6 +4,12 @@ import img3 from "../../theme-asset/img/img3.jpg"
 import img4 from "../../theme-asset/img/img4.jpg"
 import img5 from "../../theme-asset/img/img5.jpg"
 import img6 from "../../theme-asset/img/img6.jpg"
+import img7 from "../../theme-asset/img/img7.jpg"
+import img8 from "../../theme-asset/img/img8.jpg"
+import img9 from "../../theme-asset/img/img9.jpg"
+import img10 from "../../theme-asset/img/img10.jpg"
+import img11 from "../../theme-asset/img/img11.jpg"
+import img12 from "../../theme-asset/img/img12.jpg"
 
 const ShopData =
 
@@ -58,7 +64,7 @@ const ShopData =
         },
         {
             id: 7,
-            img: img1,
+            img: img7,
             title: "Lorem Epsom",
             type: "Sexbomb",
             price: "70.00",
@@ -66,7 +72,7 @@ const ShopData =
         },
         {
             id: 8,
-            img: img2,
+            img: img8,
             title: "Kutu Epsom",
             type: "Sexbomb",
             price: "76.00",
@@ -74,7 +80,7 @@ const ShopData =
         },
         {
             id: 9,
-            img: img3,
+            img: img9,
             title: "Lorem Kutu",
             type: "Salt",
             price: "88.00",
@@ -82,7 +88,7 @@ const ShopData =
         },
         {
             id: 10,
-            img: img4,
+            img: img10,
             title: "Sugat Epsom",
             type: "Salt",
             price: "48.00",
@@ -90,7 +96,7 @@ const ShopData =
         },
         {
             id: 11,
-            img: img5,
+            img: img11,
             title: "Sugat Lorem",
             type: "Black Kibal",
             price: "84.00",
@@ -98,7 +104,7 @@ const ShopData =
         },
         {
             id: 12,
-            img: img6,
+            img: img12,
             title: "Kutu Sugat",
             type: "Black Kibal",
             price: "50.00",

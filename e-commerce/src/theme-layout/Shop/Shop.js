@@ -8,6 +8,9 @@ import Dropdown from 'react-bootstrap/Dropdown'
 const Shop = () => {
 
     const [item, setItem] = useState(ShopData)
+    const [searchTerm, setSearchTerm] = useState("")
+
+    const filterData = item.filter((val) => { return (val.title.toLowerCase().includes(searchTerm.toLowerCase())) })
 
     const filterItem = (categItem) => {
 
@@ -36,33 +39,35 @@ const Shop = () => {
         setItem(updatedItems)
     }
 
-
-
     return (
         <>
-            <h1 className='mt-5 text-center main-heading'> Our Product</h1>
+            <h1 className='mt-2 text-center main-heading'> Our Product</h1>
             <hr />
 
             <DropdownButton id="dropdown-basic-button" title="Product Type" className='text-center'>
-                <Dropdown.Item href="#/action-1" onClick={() => filterItem("Black Kibal")}>Black Kibal</Dropdown.Item>
-                <Dropdown.Item href="#/action-2" onClick={() => filterItem("Salt")}>Salt</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" onClick={() => filterItem("Sexbomb")}>Sexbomb</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" onClick={() => filterItem("Yezyow")}>Yezyow</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" onClick={() => setItem(ShopData)}>All</Dropdown.Item>
+                <Dropdown.Item href="#" onClick={() => filterItem("Black Kibal")}>Black Kibal</Dropdown.Item>
+                <Dropdown.Item href="#" onClick={() => filterItem("Salt")}>Salt</Dropdown.Item>
+                <Dropdown.Item href="#" onClick={() => filterItem("Sexbomb")}>Sexbomb</Dropdown.Item>
+                <Dropdown.Item href="#" onClick={() => filterItem("Yezyow")}>Yezyow</Dropdown.Item>
+                <Dropdown.Item href="#" onClick={() => setItem(ShopData)}>All</Dropdown.Item>
             </DropdownButton>
             <br></br>
             <DropdownButton id="dropdown-basic-button" title="Price filter" className='text-center'>
-                <Dropdown.Item href="#/action-1" onClick={() => filterPrice("51")}>1-50</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" onClick={() => filterPrice1("51")}>51-100</Dropdown.Item>
+                <Dropdown.Item href="#" onClick={() => filterPrice("51")}>$ 1-50</Dropdown.Item>
+                <Dropdown.Item href="#" onClick={() => filterPrice1("51")}>$ 51-100</Dropdown.Item>
             </DropdownButton>
 
-            <br></br><br></br>
+            <br></br>
+            <div className='text-center'>
+                <input type="text" placeholder='Search Product...' className='' onChange={(event) => { setSearchTerm(event.target.value) }}></input>
+            </div>
+            <br></br>
             <div className='row '>
-                {item.map((data) => {
+                {filterData.map((data) => {
                     return (
                         <div className=" d-flex col-lg-3 col-md-4 col-sm-12 justify-content-center mb-3">
                             <Card style={{ width: '18rem' }} key={data.id}>
-                                <Card.Img variant="top" src={data.img} />
+                                <Card.Img variant="top" src={data.img} className="bg-secondary" />
                                 <Card.Body>
                                     <Card.Title>{data.title}</Card.Title>
                                     <Card.Text>

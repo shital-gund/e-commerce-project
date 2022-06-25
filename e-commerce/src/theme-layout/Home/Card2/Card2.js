@@ -1,12 +1,12 @@
 import React from 'react'
-import Card1Data from './Card1Data'
+import Card1Data from './Card2Data'
 import Card from 'react-bootstrap/Card'
 
-const Card1 = () => {
+const Card2 = () => {
     return (
         <div className="">
             <div className="display-header">
-                <h1>Featured Products</h1>
+                <h1>Recommended Products</h1>
                 {/* <a href="/home" className='text-dark text-end'>See All</a> */}
             </div>
             <div className='row '>
@@ -30,4 +30,4 @@ const Card1 = () => {
     )
 }
 
-export default Card1
+export default Card2

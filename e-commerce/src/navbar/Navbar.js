@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../theme-asset/img/logo.png"
-import NavbarData, { Navlink } from "./NavbarData"
+import NavbarData from "./NavbarData";
 import Form from 'react-bootstrap/Form'
-// import "../theme-asset/css/chunk-vendors.814e7775.css";
-// import "../theme-asset/css/app.adda8296.css";
+import ShopData from '../theme-layout/Shop/ShopData';
+
 
 const Navbar = () => {
+
   return (
     <>
       <div className="navbar-area bg-white p-relative">
@@ -33,7 +34,6 @@ const Navbar = () => {
                   )
                 })}
               </ul>
-              <submit> <Form.Control type="email" placeholder="Search Product" /></submit>
               <NavLink exact to="/home" className="me-4"> <i className={"bx bx-cart"}></i> </NavLink>
               <div className="others-options">
                 <button type='button' className="button button-small btn btn-dark" href="/signup">Sign Up</button> <span> </span><button type='button'

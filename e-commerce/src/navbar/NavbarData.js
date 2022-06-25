@@ -11,12 +11,12 @@ const NavbarData = [
     },
     {
         id: 3,
-        path: "/page",
+        path: "/featured",
         menu: "Featured"
     },
     {
         id: 4,
-        path: "/blog",
+        path: "/recommended",
         menu: "Recommended"
     }
 ]
