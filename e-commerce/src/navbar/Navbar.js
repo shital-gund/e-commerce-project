@@ -3,8 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../theme-asset/img/logo.png"
 import NavbarData from "./NavbarData";
-import Form from 'react-bootstrap/Form'
-import ShopData from '../theme-layout/Shop/ShopData';
+import cart from "../theme-asset/img/bag.png"
 
 
 const Navbar = () => {
@@ -33,10 +32,10 @@ const Navbar = () => {
                     </li>
                   )
                 })}
-              </ul>
-              <NavLink exact to="/home" className="me-4"> <i className={"bx bx-cart"}></i> </NavLink>
-              <div className="others-options">
-                <button type='button' className="button button-small btn btn-dark" href="/signup">Sign Up</button> <span> </span><button type='button'
+              </ul>             
+              <NavLink exact to="/home" className="ms-2 me-5"> <img src={cart} style={{ width: '2rem' }}/> </NavLink>
+              <div className="others-options d-flex justify-content-right ms-5">
+                <button type='button' className="button button-small btn btn-dark ms-5 me-2" href="/home">Sign Up</button> <span> </span><button type='button'
                   className="button button-small button-muted margin-left-s btn btn-light" href="/signin">Sign In</button>
               </div>
             </div>
