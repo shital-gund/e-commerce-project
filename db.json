@@ -1,0 +1,140 @@
+{
+  
+  "category": [
+    {
+      "id": 1,
+      "name": "Burnikk"
+    },
+    {
+      "id": 2,
+      "name": "Kulangot"
+    },
+    {
+      "id": 3,
+      "name": "Pitaklan"
+    }
+  ],
+  
+  "color": [
+    {
+      "id": 1,
+      "name": "red"
+    },
+    {
+      "id": 2,
+      "name": "blue"
+    },
+    {
+      "id": 3,
+      "name": "brown"
+    },
+    {
+      "id": 4,
+      "name": "yellow"
+    }
+  ],
+  "price":[
+         {
+          "id":1,
+          "name":" under $100"
+         },
+         {
+          "id":2,
+          "name":"under $200"
+         },
+         {
+          "id":3,
+          "name":"under $300"
+         }
+  ],
+  "products": [
+    {
+      "id": 1,
+    "img": "img/img1.png",
+    "name": "Kulangot",
+    "brand": "Salt",
+    "price": "$67.00",
+    "color": "yellow",
+      "category_id": 2,
+      "color_id": 4,
+      "price_id":1
+    },
+    {
+      "id": 2,
+    "img": "img/img2.png",
+    "name": "Pitaklan",
+    "brand": "Salt Maalat",
+    "price": "$220.00",
+    "color": "Blue",
+      "category_id": 3,
+      "color_id": 2,
+      "price_id":3
+    },
+    {
+      "id": 3,
+    "img": "img/img3.png",
+    "name": "Pitaklan",
+    "brand": "Salt",
+    "price": "$250.00",
+    "color": "brown",
+      "category_id": 3,
+      "color_id": 3,
+      "price_id":3
+    },
+    {
+      "id": 4,
+    "img": "img/img4.png",
+    "name": "Burnikk",
+    "brand": "Salt Maalat",
+    "price": "$190.00",
+    "color": "Red",
+      "category_id": 1,
+      "color_id": 1,
+      "price_id":2
+    },
+    {
+      "id": 5,
+      "img": "img/img5.png",
+      "name": "Pitaklan",
+      "brand": "Salt",
+      "price": "$90.00",
+      "color": "Brown",
+      "category_id": 3,
+      "color_id": 3,
+      "price_id":1
+    },
+    {
+      "id": 6,
+    "img": "img/img6.png",
+    "name": "Kulangot",
+    "brand": "Salt",
+    "price": "$67.00",
+    "color": "brown",
+      "category_id": 2,
+      "color_id": 3,
+      "price_id":1
+    },
+    {
+      "id": 7,
+    "img": "img/img7.png",
+    "name": "Kulangot",
+    "brand": "Salt Maalat",
+    "price": "$150.00",
+    "color": "yellow",
+      "category_id": 2,
+      "color_id": 4,
+      "price_id":2
+    },
+    {
+      "id": 8,
+      "img": "img/img8.png",
+      "name": "Burnikk",
+      "brand": "Salt",
+      "price": "$67.00",
+      "color": "Red",
+      "category_id": 1,
+      "color_id": 1,
+      "price_id":1
+    }
+  ]
+}
