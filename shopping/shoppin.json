@@ -1,0 +1,220 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Burnikk",
+      "description": "salt",
+      "price": "$67.00",
+      "image": "./json_images/buldit.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Kulangot",
+      "description": "sexbomb",
+      "price": "$250.00",
+      "image": "./json_images/balakubak.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pitaklan",
+      "description": "kibaal black",
+      "price": "$443.00",
+      "image": "./json_images/kibalbatal.jpg"
+    }
+  ],
+  "color": [
+    {
+      "id": 1,
+      "name": "red"
+    },
+    {
+      "id": 2,
+      "name": "blue"
+    },
+    {
+      "id": 3,
+      "name": "black"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "img": "./json_images/buldit.jpg",
+      "name": "Kulangot",
+      "brand": "Salt",
+      "price": "$67.00",
+      "color": "Black",
+      "category_id": 2,
+      "color_id": 2
+    },
+    {
+      "id": 2,
+      "img": "./json_images/balakubak.jpg",
+      "name": "Pitaklan",
+      "brand": "Salt Maalat",
+      "price": "$200.00",
+      "color": "Blue",
+      "category_id": 3,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 3,
+      "img": "./json_images/tuluk.jpg",
+      "name": "Pitaklan",
+      "brand": "Salt",
+      "price": "$250.00",
+      "color": "Blue",
+      "category_id": 3,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 4,
+      "img": "./json_images/buldit.jpg",
+      "name": "Burnikk",
+      "brand": "Salt Maalat",
+      "price": "$100.00",
+      "color": "Blue",
+      "category_id": 1,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 5,
+      "img": "./json_images/burnik.jpg",
+      "name": "Pitaklan",
+      "brand": "Salt",
+      "price": "$90.00",
+      "color": "Blue",
+      "category_id": 3,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 6,
+      "img": "./json_images/tuluk.jpg",
+      "name": "Kulangot",
+      "brand": "Salt",
+      "price": "$67.00",
+      "color": "Blue",
+      "category_id": 2,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 7,
+      "img": "./json_images/buldit.jpg",
+      "name": "Kulangot",
+      "brand": "Salt Maalat",
+      "price": "$100.00",
+      "color": "Blue",
+      "category_id": 2,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 8,
+      "img": "./json_images/saltmatal.jpg",
+      "name": "Burnikk",
+      "brand": "Salt",
+      "price": "$67.00",
+      "color": "Black",
+      "category_id": 1,
+      "color_id": 2,
+      "size_id": 1
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Burnikk",
+      "img": "./json_images/saltmatal.jpg",
+      "price": "$67.00"
+    },
+    {
+      "title": "Kulangot",
+      "price": "$67.00",
+      "image": "./json_images/buldit.jpg",
+      "id": 2
+    },
+    {
+      "title": "Burnikk",
+      "price": "$67.00",
+      "image": "./json_images/saltmatal.jpg",
+      "id": 3
+    },
+    {
+      "title": "Pitaklan",
+      "price": "$250.00",
+      "image": "./json_images/tuluk.jpg",
+      "id": 4
+    },
+    {
+      "title": "Kulangot",
+      "price": "$67.00",
+      "image": "./json_images/tuluk.jpg",
+      "id": 5
+    },
+    {
+      "title": "Pitaklan",
+      "price": "$90.00",
+      "image": "./json_images/burnik.jpg",
+      "id": 6
+    },
+    {
+      "title": "Kulangot",
+      "price": "$67.00",
+      "image": "./json_images/buldit.jpg",
+      "id": 7
+    },
+    {
+      "title": "Burnikk",
+      "price": "$100.00",
+      "image": "./json_images/buldit.jpg",
+      "id": 8
+    },
+    {
+      "title": "Pitaklan",
+      "price": "$200.00",
+      "image": "./json_images/balakubak.jpg",
+      "id": 9
+    },
+    {
+      "title": "Pitaklan",
+      "price": "$250.00",
+      "image": "./json_images/tuluk.jpg",
+      "id": 10
+    },
+    {
+      "title": "Pitaklan",
+      "price": "$200.00",
+      "image": "./json_images/balakubak.jpg",
+      "id": 11
+    },
+    {
+      "title": "Pitaklan",
+      "price": "$250.00",
+      "image": "./json_images/tuluk.jpg",
+      "id": 12
+    },
+    {
+      "title": "Pitaklan",
+      "price": "$90.00",
+      "image": "./json_images/burnik.jpg",
+      "id": 13
+    },
+    {
+      "title": "Kulangot",
+      "price": "$67.00",
+      "image": "./json_images/buldit.jpg",
+      "id": 14
+    },
+    {
+      "title": "Burnikk",
+      "price": "$100.00",
+      "image": "./json_images/buldit.jpg",
+      "id": 15
+    }
+  ]
+}
