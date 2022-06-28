@@ -1,4 +1,5 @@
 import '../../App.js'
+import Cart from './Utility/Cart';
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 const Shop = () => {
@@ -8,6 +9,7 @@ const Shop = () => {
     const [colorData, setColorData] = useState([])
     const [priceData,setPriceData]=useState([])
     const [AllProductData, setAllProductData] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("")
 
     useEffect(() => {
         getAllProductData();
@@ -15,7 +17,6 @@ const Shop = () => {
         getAllColorData();
         getAllPriceData()
     }, [])
-
     const getAllProductData = () => {
         axios.get('http://localhost:3001/products')
             .then(response => {
@@ -28,7 +29,8 @@ const Shop = () => {
             .catch(err => console.log(err))
 
     }
-    const getAllCategoryData = () => {
+  
+     const getAllCategoryData = () => {
         axios.get('http://localhost:3001/category')
             .then(response => {
                 console.log("Getting from Server category data =>", response.data)
@@ -88,6 +90,9 @@ const Shop = () => {
         setProductData(filterPrice);
     }
     }
+
+    const filterData = productData.filter((val) => { return (val.name.toLowerCase().includes(searchTerm.toLowerCase())) })
+
     return (
         <>
             <div className='container'>
@@ -147,18 +152,24 @@ const Shop = () => {
                         </select>
                     </ul>
                 </div>
+
+
+                <div className='text-center'>
+                <input type="text" placeholder='Search Product...' className='' onChange={(event) => { setSearchTerm(event.target.value) }}></input>
+            </div>
+            <br></br>
                 <div className='row'>
                     {
-                        productData.length && productData.map((product) => {
+                        filterData.length && filterData.map((product) => {
                             return (
-                                <div key={product.key} className="col-3 my-2">
+                                <div key={product.id} className="col-3 my-2">
                                     <div className='card' style={{ width: "18rem" }}>
                                         <img src={product.img} className="card-img-top" alt="..." />
                                         <div className="card-body">
                                            <strong> <h2 className="card-title">{product.name}</h2></strong>
                                             <h5 className="card-text">{product.brand}</h5>
                                             <h4 className="card-title">{product.price}</h4>
-                                            <a className="btn btn-primary" >Add to Card</a>
+                                            <Cart products={product} />
                                         </div>
 
                                     </div>

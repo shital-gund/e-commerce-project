@@ -1,4 +1,6 @@
-import React from 'react';
+
+import axios from 'axios'
+import React, { useEffect,useState} from 'react'
 import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../assets/images/logo.png"
@@ -9,6 +11,17 @@ import { BiCart} from "react-icons/bi";
 
 
 const Navbar = () => {
+  const [cartAmount, setCartAmount] = useState(0);
+
+  useEffect(() => {
+    axios.get(` http://localhost:3001/cart`)
+      .then((response) => {
+        setCartAmount(response.data.length);
+      })
+      .catch((error) => { console.log("response", error) })
+  }, [])
+
+   
 
   return (
     <>
@@ -38,7 +51,12 @@ const Navbar = () => {
               
               <submit> <Form.Control type="email" placeholder="Search Product" /></submit>
               <NavLink exact to="/home" className="me-4"> <i className={"bx bx-cart"}></i> </NavLink>
-              <BiCart/>
+          
+              <div className="container">
+           <div className="d-flex flex-row-reverse">
+           <h4 style={{color:"red"}}> <BiCart/>{cartAmount}</h4>
+      </div>
+    </div>
               
               <li class="navigation-action"><a class="button button-small" href="/signup">Sign Up</a>
               <a class="button button-small button-muted margin-left-s" href="/signin">Sign In</a></li>
