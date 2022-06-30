@@ -44,7 +44,7 @@ const Shop = () => {
             <h1 className='mt-2 text-center main-heading'> Our Product</h1>
             <hr />
 
-            <DropdownButton id="dropdown-basic-button" title="Product Type" className='text-center'>
+            <DropdownButton variant="dark" bg="dark" id="dropdown-basic-button" title="Product Type" className='text-center'>
                 <Dropdown.Item href="#" onClick={() => filterItem("Black Kibal")}>Black Kibal</Dropdown.Item>
                 <Dropdown.Item href="#" onClick={() => filterItem("Salt")}>Salt</Dropdown.Item>
                 <Dropdown.Item href="#" onClick={() => filterItem("Sexbomb")}>Sexbomb</Dropdown.Item>
@@ -52,7 +52,7 @@ const Shop = () => {
                 <Dropdown.Item href="#" onClick={() => setItem(ShopData)}>All</Dropdown.Item>
             </DropdownButton>
             <br></br>
-            <DropdownButton id="dropdown-basic-button" title="Price filter" className='text-center'>
+            <DropdownButton variant="dark" bg="dark" id="dropdown-basic-button" title="Price filter" className='text-center'>
                 <Dropdown.Item href="#" onClick={() => filterPrice("51")}>$ 1-50</Dropdown.Item>
                 <Dropdown.Item href="#" onClick={() => filterPrice1("51")}>$ 51-100</Dropdown.Item>
             </DropdownButton>
@@ -76,7 +76,7 @@ const Shop = () => {
                                     <Card.Text>
                                         ${data.price}
                                     </Card.Text>
-                                    <Button variant="primary">Add to Basket</Button>
+                                    <Button variant="primary btn btn-dark">Add to Basket</Button>
                                 </Card.Body>
                             </Card>
                         </div>

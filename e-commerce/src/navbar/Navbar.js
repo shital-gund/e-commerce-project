@@ -32,8 +32,8 @@ const Navbar = () => {
                     </li>
                   )
                 })}
-              </ul>             
-              <NavLink exact to="/home" className="ms-2 me-5"> <img src={cart} style={{ width: '2rem' }}/> </NavLink>
+              </ul>
+              <NavLink exact to="/basket" className="ms-2 me-5"> <img src={cart} style={{ width: '2rem' }} /> </NavLink>
               <div className="others-options d-flex justify-content-right ms-5">
                 <button type='button' className="button button-small btn btn-dark ms-5 me-2" href="/home">Sign Up</button> <span> </span><button type='button'
                   className="button button-small button-muted margin-left-s btn btn-light" href="/signin">Sign In</button>
