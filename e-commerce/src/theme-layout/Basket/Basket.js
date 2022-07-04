@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react'
 
 const Basket = () => {
     const [basket, setBasketdata] = useState([])
+    const [tatal, setTotal] = useState([])
 
     useEffect(() => {
         getBasketData()
-    }, [])
+    })
 
     const getBasketData = () => {
         axios.get("http://localhost:3001/Cart")
@@ -25,14 +26,13 @@ const Basket = () => {
     };
 
     const patchData = (id, quentity) => {
-        quentity > 0 ? quentity:deleteData(id)
+        quentity > 0 ? quentity : deleteData(id)
         let value = { qty: quentity }
         axios.patch(`http://localhost:3001/Cart/${id}`, value)
             .then(response => {
                 console.log(response)
             }).catch(err => console.log(err))
     };
-
 
     return (
         <>
@@ -52,11 +52,11 @@ const Basket = () => {
                                     ${data.price * data.qty}
                                 </h4>
                                 <div className='col-1'>
-                                    <button onClick={() => { patchData(data.id, data.qty + 1) }}>+</button>
-                                    <h4 className=''>
+                                    <button style={{ width: "2rem" }} onClick={() => { patchData(data.id, data.qty + 1) }}>+</button>
+                                    <h4 className='ms-2'>
                                         {data.qty}
                                     </h4>
-                                    <button onClick={() => { patchData(data.id, data.qty - 1) }}>-</button>
+                                    <button style={{ width: "2rem" }} onClick={() => { patchData(data.id, data.qty - 1) }}>-</button>
                                 </div>
                                 <div className='col-2'>
                                     <button className="btn btn-outline-danger px-5 mt-2" onClick={() => deleteData(data.id)}>Remove</button>

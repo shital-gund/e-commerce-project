@@ -1,4 +1,5 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../theme-asset/img/logo.png"
@@ -7,6 +8,20 @@ import cart from "../theme-asset/img/bag.png"
 
 
 const Navbar = () => {
+
+  const [value, setValue] = useState([])
+
+  useEffect(() => {
+    valueData()
+  }, [])
+
+  const valueData = () => {
+    axios.get("http://localhost:3001/Cart")
+      .then(response => {
+        console.log(response.data.length)
+        setValue(response.data.length)
+      }).catch(err => console.log(err))
+  }
 
   return (
     <>
@@ -33,10 +48,15 @@ const Navbar = () => {
                   )
                 })}
               </ul>
-              <NavLink exact to="/basket" className="ms-2 me-5"> <img src={cart} style={{ width: '2rem' }} /> </NavLink>
+              <NavLink exact to="/basket" className="ms-2 me-5"> <img src={cart} style={{ width: '2rem' }} />
+                <span className="position-absolute badge rounded-pill bg-dark">
+                  {value}
+                  <span className="visually-hidden">unread messages</span>
+                </span>
+              </NavLink>
               <div className="others-options d-flex justify-content-right ms-5">
-                <button type='button' className="button button-small btn btn-dark ms-5 me-2" href="/home">Sign Up</button> <span> </span><button type='button'
-                  className="button button-small button-muted margin-left-s btn btn-light" href="/signin">Sign In</button>
+                <NavLink exact to="/signup" className="button button-small btn btn-dark ms-5 me-2">Sign Up</NavLink> <span> </span>
+                <NavLink exact to="/signin" className="button button-small btn btn-dark ms-2 me-2">Sign In</NavLink>
               </div>
             </div>
           </nav>
