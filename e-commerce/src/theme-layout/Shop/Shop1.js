@@ -85,7 +85,7 @@ const Shop1 = () => {
                                     <Card.Text>
                                         ${data.price}
                                     </Card.Text>
-                                    <Cart product={data}/>
+                                    <Cart product={data} />
                                 </Card.Body>
                             </Card>
                         </div>

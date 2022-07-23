@@ -99,6 +99,14 @@
   ],
   "Cart": [
     {
+      "id": 4,
+      "img": "img/img4.jpg",
+      "title": "Very Nice",
+      "type": "Salt",
+      "price": "79.00",
+      "qty": 1
+    },
+    {
       "id": 2,
       "img": "img/img2.jpg",
       "title": "Kulangot",
@@ -109,62 +117,28 @@
   ],
   "signin": [
     {
-      "id": 1,
-      "username": "abc",
-      "password": "abc"
+      "firstName": "Aalesh",
+      "lastName": "Patil",
+      "email": "aaleshpatil22@gmail.com",
+      "password": "",
+      "mobile": "8806387890",
+      "id": 1
     },
     {
-      "username": "a",
+      "firstName": "Aalesh",
+      "lastName": "Patil",
+      "email": "aaleshpatil22@gmail.com",
+      "password": "all",
+      "mobile": "8806387890",
       "id": 2
     },
     {
-      "username": "ap",
+      "firstName": "fbdfbdf",
+      "lastName": "Patil",
+      "email": "aaleshpatil22@gmail.com",
+      "password": "all",
+      "mobile": "8806387890",
       "id": 3
-    },
-    {
-      "username": "app",
-      "id": 4
-    },
-    {
-      "username": "app",
-      "password": "a",
-      "id": 5
-    },
-    {
-      "username": "app",
-      "password": "ap",
-      "id": 6
-    },
-    {
-      "username": "app",
-      "password": "app",
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "username": "k",
-      "id": 10
-    },
-    {
-      "username": "kk",
-      "id": 11
-    },
-    {
-      "username": "a",
-      "id": 12
-    },
-    {
-      "username": "ab",
-      "id": 13
-    },
-    {
-      "username": "abb",
-      "id": 14
     }
   ]
 }

@@ -7,12 +7,12 @@ const Basket = () => {
 
     useEffect(() => {
         getBasketData()
-    })
+    },[])
 
     const getBasketData = () => {
         axios.get("http://localhost:3001/Cart")
             .then(response => {
-                console.log(response.data)
+                console.log(response.data.length)
                 setBasketdata(response.data)
             }).catch(err => console.log(err))
     }
@@ -31,6 +31,18 @@ const Basket = () => {
         axios.patch(`http://localhost:3001/Cart/${id}`, value)
             .then(response => {
                 console.log(response)
+                if(response.status === 200) {
+                    let tempItems = JSON.parse(JSON.stringify(basket));
+                    for(let i = 0; i < tempItems.length; i++) {
+                      if(tempItems[i].id == id) {
+                        let item = tempItems[i];
+                        item.qty = quentity
+                        tempItems[i] = item; 
+                        break;
+                      }
+                    }
+                    setBasketdata(tempItems);
+                   }
             }).catch(err => console.log(err))
     };
 

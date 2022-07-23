@@ -15,7 +15,7 @@ const Login = () => {
         name === errorMessages.name && (
             <div className="error">{errorMessages.message}</div>
         );
-
+            
     const handleSubmit = (event) => {
         //Prevent page reload
         event.preventDefault();
@@ -28,7 +28,7 @@ const Login = () => {
         var { uname, pass } = document.forms[0];
 
         // Find user login info
-        const userData = database.find((user) => user.username === uname.value);
+        const userData = database.find((user) => user.email === uname.value);
 
         // Compare user info
         if (userData) {
@@ -52,7 +52,7 @@ const Login = () => {
                     <div className="form">
                         <form onSubmit={handleSubmit}>
                             <div className="input-container">
-                                <label>Username </label>
+                                <label>Email</label>
                                 <input type="text" name="uname" required />
                                 {renderErrorMessage("uname")}
                             </div>

@@ -2,26 +2,26 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../theme-asset/img/logo.png"
+import logo from "../theme-asset/img/logo.png";
 import NavbarData from "./NavbarData";
-import cart from "../theme-asset/img/bag.png"
-
+import cart from "../theme-asset/img/bag.png";
 
 const Navbar = () => {
 
   const [value, setValue] = useState([])
 
   useEffect(() => {
-    valueData()
-  }, [])
-
-  const valueData = () => {
     axios.get("http://localhost:3001/Cart")
       .then(response => {
+        console.log(response)
         console.log(response.data.length)
         setValue(response.data.length)
+        if (response.status===200){
+          let len=response.data.length
+          setValue(len)
+        }       
       }).catch(err => console.log(err))
-  }
+  },[])
 
   return (
     <>
